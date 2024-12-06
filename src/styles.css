@@ -1,29 +1,46 @@
-:root {
-    --yellow: #eaca44;
-    --brown: #4f3923;
-    --black: #000;
-    --white: #f4f3f3;
-    --gray: #737373;
-  }
-
 .lilita-one-regular {
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-  
+
 
 body {
+    color: var(--white);
     background: #5271ff;
     min-height: 100vh;
     font-family: 'Lilita One', sans-serif;
     overflow-y: hidden;
 }
 
-.home {
+.color-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    text-align: center;
+}
+
+.color-square {
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    border: 0px none;
+    box-shadow: 0 50px 0 0 var(--black); 
+}
+
+.color-square:active {
+    border: 10px solid white;
+}
+
+.color-square:hover {
+    cursor: pointer;
+}
+
+.color-square-active {
+    border: 10px solid white;
+}
+
+p {
+   color: #f4f3f3;
+   font-size: large;
+   font-family: 'Lilita One', sans-serif;
 }

@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ColorDashboardComponent } from './color-dashboard/color-dashboard.component';
+import { ColorNameComponent } from "./color-name/color-name.component";
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [ColorDashboardComponent, ColorNameComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
