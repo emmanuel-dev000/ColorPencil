@@ -8,12 +8,10 @@ import { ColorService } from '../color.service';
   styleUrl: './color-name.component.css'
 })
 export class ColorNameComponent {
-  activatedColors : Array<string> = new Array<string>;
   constructor (private colorService: ColorService) {
-    this.activatedColors = colorService.activatedColors;
   }
 
   get getActivatedColors() {
-    return this.activatedColors.join(", ");
+    return this.colorService.activatedColors.join(", ");
   }
 }

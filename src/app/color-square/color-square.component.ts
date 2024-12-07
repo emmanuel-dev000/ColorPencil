@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input} from '@angular/core';
+import { ColorService } from '../color.service';
 
 @Component({
   selector: 'app-color-square',
@@ -11,8 +12,11 @@ import { Component, Input} from '@angular/core';
 export class ColorSquareComponent {
   @Input({required: true}) name : string = '';
   @Input({required: true}) hexcode : string = '';
+  constructor(private colorService : ColorService) {
+  }
   
   activateColor() {
-    alert(this.name + " is activated");
+    this.colorService.activateColor(this.name);
+    // alert(this.name + " is activated");
   }
 }

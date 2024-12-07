@@ -8,8 +8,6 @@ export class ColorService {
   colors : Array<Color> = new Array<Color>();
   activatedColors : Array<string> = new Array<string>();
   constructor() {
-    this.activatedColors.push("black");
-    this.activatedColors.push("white");
     this.colors = [
       {
         id: 1,
@@ -46,5 +44,11 @@ export class ColorService {
 
   activateColor(name: string) {
     this.activatedColors.push(name);
+    console.log("------------------------");
+    
+    for (let index = 0; index < this.activatedColors.length; index++) {
+      const element =  this.activatedColors[index];
+      console.log(element);
+    }
   }
 }
