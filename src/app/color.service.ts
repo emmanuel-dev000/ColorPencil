@@ -44,11 +44,9 @@ export class ColorService {
 
   activateColor(name: string) {
     this.activatedColors.push(name);
-    console.log("------------------------");
-    
-    for (let index = 0; index < this.activatedColors.length; index++) {
-      const element =  this.activatedColors[index];
-      console.log(element);
-    }
+  }
+
+  clearActivatedColors() {
+    this.activatedColors = [];
   }
 }
