@@ -1,5 +1,10 @@
-<div class="color-container">
-    <app-color-dashboard></app-color-dashboard>
+<div style="display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center;">
+    <div class="color-container">
+        <app-color-dashboard></app-color-dashboard>
+    </div>
+    <p style="color: #f4f3f3;
+    font-size: large;
+    font-family: 'Lilita One', sans-serif; margin-top: 15vh;" >Choose your favorite colors for your Color Pencil Collection.</p>
+    <app-color-name></app-color-name>
+    <button class="clear-button" (click)="clearActivatedColors()" >Clear</button>
 </div>
-<app-color-name></app-color-name>
-<button (click)="clearActivatedColors()" >Clear</button>

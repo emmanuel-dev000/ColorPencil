@@ -10,7 +10,6 @@ body {
     background: #5271ff;
     min-height: 100vh;
     font-family: 'Lilita One', sans-serif;
-    overflow-y: hidden;
 }
 
 .color-container {
@@ -24,7 +23,11 @@ body {
     height: 200px;
     margin: 25px;
     border: 0px none;
-    box-shadow: 0 50px 0 0 var(--black); 
+    box-shadow: 0 50px 0 0 var(--black);
+    
+    color: #f4f3f3;
+    font-size: large;
+    font-family: 'Lilita One', sans-serif;
 }
 
 .color-square:active {
@@ -44,10 +47,27 @@ body {
     box-shadow: 0 50px 0 0 var(--black); 
     border: 10px solid white;
     cursor: pointer;
+
+    color: #f4f3f3;
+    font-size: large;
+    font-family: 'Lilita One', sans-serif;
 }
 
-p {
+.activated-colors {
    color: #f4f3f3;
-   font-size: large;
+   font-size: xx-large;
    font-family: 'Lilita One', sans-serif;
+}
+
+.clear-button {
+    border-radius: 20px;
+    width: 150px;
+    height: 50px;
+    background-color: #004aad;
+    border: 0px none;
+    cursor: pointer;
+
+    color: #f4f3f3;
+    font-size: large;
+    font-family: 'Lilita One', sans-serif;
 }
