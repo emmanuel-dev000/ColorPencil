@@ -43,6 +43,12 @@ export class ColorService {
   }
 
   activateColor(name: string) {
+    if (this.activatedColors.find(x => x == name)) {
+      var i = this.activatedColors.indexOf(name);
+      this.activatedColors.splice(i, 1);
+      return;
+    }
+
     this.activatedColors.push(name);
   }
 

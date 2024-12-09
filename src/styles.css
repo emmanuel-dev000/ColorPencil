@@ -36,7 +36,14 @@ body {
 }
 
 .color-square-active {
+    border-radius: 25px;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+    border: 0px none;
+    box-shadow: 0 50px 0 0 var(--black); 
     border: 10px solid white;
+    cursor: pointer;
 }
 
 p {

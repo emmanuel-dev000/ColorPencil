@@ -17,6 +17,9 @@ export class ColorSquareComponent {
   
   activateColor() {
     this.colorService.activateColor(this.name);
-    // alert(this.name + " is activated");
+  }
+
+  get isColorActivated() {
+    return this.colorService.activatedColors.find(x => x == this.name) != null;
   }
 }
